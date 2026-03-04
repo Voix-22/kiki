@@ -7,14 +7,12 @@ const prioritySelect = document.getElementById("priority");
 const dueDateInput = document.getElementById("dueDate");
 
 const searchInput = document.getElementById("searchInput");
-
 const progressBar = document.getElementById("progressBar");
 const progressText = document.getElementById("progressText");
 
 const darkModeBtn = document.getElementById("darkModeBtn");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-
 let draggedIndex = null;
 
 /* SAVE */
@@ -63,7 +61,6 @@ const li=document.createElement("li");
 
 li.classList.add(task.category);
 li.classList.add(task.priority);
-
 li.draggable=true;
 
 if(task.completed) li.classList.add("completed");
@@ -80,7 +77,6 @@ li.classList.add("overdue");
 }
 
 const content=document.createElement("div");
-
 content.className="task-content";
 
 content.innerHTML=`
@@ -96,7 +92,6 @@ renderTasks();
 };
 
 const deleteBtn=document.createElement("button");
-
 deleteBtn.textContent="Delete";
 deleteBtn.className="deleteBtn";
 
@@ -144,14 +139,14 @@ updateProgress();
 function updateProgress(){
 
 const total=tasks.length;
-
 const completed=tasks.filter(t=>t.completed).length;
 
 const percent = total===0 ? 0 : (completed/total)*100;
 
 progressBar.style.width = percent + "%";
 
-progressText.textContent = completed+" / "+total+" tasks completed";
+progressText.textContent =
+completed+" / "+total+" tasks completed";
 
 }
 
