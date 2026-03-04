@@ -5,11 +5,12 @@ text-align:center;
 margin-top:40px;
 }
 
-/* CARD */
+/* CONTAINER */
 
 .container{
 background:white;
-width:450px;
+max-width:450px;
+width:90%;
 margin:auto;
 padding:25px;
 border-radius:15px;
@@ -19,33 +20,39 @@ box-shadow:0 10px 25px rgba(0,0,0,0.2);
 /* INPUTS */
 
 input,select{
-padding:8px 10px;
-margin:5px;
+width:100%;
+padding:10px;
+margin:6px 0;
 border-radius:5px;
 border:1px solid #ccc;
 font-size:14px;
+box-sizing:border-box;
 }
 
+/* SEARCH */
+
 #searchInput{
-width:80%;
+margin-top:10px;
 }
 
 /* BUTTON */
 
 .addTaskBtn{
+width:100%;
 cursor:pointer;
-padding:10px 20px;
+padding:10px;
 border-radius:12px;
 background:#fff0f0;
 border:2px solid #b18597;
 font-weight:600;
+margin-top:10px;
 }
 
 .addTaskBtn:hover{
 background:#ffe9e9;
 }
 
-/* DARK BUTTON */
+/* DARK MODE BUTTON */
 
 #darkModeBtn{
 margin-bottom:10px;
@@ -73,6 +80,8 @@ color:white;
 display:flex;
 justify-content:space-between;
 align-items:center;
+gap:10px;
+flex-wrap:wrap;
 cursor:grab;
 }
 
@@ -160,4 +169,23 @@ background:#2c2c2c;
 background:#444;
 color:white;
 border:1px solid #666;
+}
+
+/* MOBILE ADJUSTMENTS */
+
+@media (max-width:600px){
+
+.container{
+padding:18px;
+}
+
+h2{
+font-size:20px;
+}
+
+.deleteBtn{
+font-size:12px;
+padding:5px 10px;
+}
+
 }
