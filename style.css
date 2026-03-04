@@ -1,0 +1,163 @@
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+text-align:center;
+margin-top:40px;
+}
+
+/* CARD */
+
+.container{
+background:white;
+width:450px;
+margin:auto;
+padding:25px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* INPUTS */
+
+input,select{
+padding:8px 10px;
+margin:5px;
+border-radius:5px;
+border:1px solid #ccc;
+font-size:14px;
+}
+
+#searchInput{
+width:80%;
+}
+
+/* BUTTON */
+
+.addTaskBtn{
+cursor:pointer;
+padding:10px 20px;
+border-radius:12px;
+background:#fff0f0;
+border:2px solid #b18597;
+font-weight:600;
+}
+
+.addTaskBtn:hover{
+background:#ffe9e9;
+}
+
+/* DARK BUTTON */
+
+#darkModeBtn{
+margin-bottom:10px;
+padding:6px 12px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+background:#333;
+color:white;
+}
+
+/* TASK LIST */
+
+ul{
+list-style:none;
+padding:0;
+margin-top:20px;
+}
+
+li{
+margin:10px 0;
+padding:12px 15px;
+border-radius:8px;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+cursor:grab;
+}
+
+.task-content{
+text-align:left;
+}
+
+/* CATEGORY COLORS */
+
+.Work{background:#3498db;}
+.Personal{background:#2ecc71;}
+.Shopping{background:#e67e22;}
+.Academics{background:#9b59b6;}
+
+/* PRIORITY */
+
+.High{border-left:6px solid red;}
+.Medium{border-left:6px solid orange;}
+.Low{border-left:6px solid green;}
+
+/* COMPLETED */
+
+.completed{
+text-decoration:line-through;
+opacity:0.6;
+}
+
+/* OVERDUE */
+
+.overdue{
+background:#e74c3c !important;
+}
+
+/* DELETE BUTTON */
+
+.deleteBtn{
+background:red;
+border:none;
+color:white;
+padding:6px 12px;
+border-radius:5px;
+cursor:pointer;
+}
+
+.deleteBtn:hover{
+background:darkred;
+}
+
+/* PROGRESS BAR */
+
+.progress-container{
+width:100%;
+background:#eee;
+border-radius:10px;
+margin-top:10px;
+height:12px;
+overflow:hidden;
+}
+
+#progressBar{
+height:100%;
+width:0%;
+background:#2ecc71;
+transition:width 0.3s;
+}
+
+#progressText{
+font-size:13px;
+margin-top:5px;
+}
+
+/* DARK MODE */
+
+.dark-mode{
+background:#1e1e1e;
+color:white;
+}
+
+.dark-mode .container{
+background:#2c2c2c;
+}
+
+.dark-mode input,
+.dark-mode select{
+background:#444;
+color:white;
+border:1px solid #666;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TO_DO 23266</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>TO-DO List 23266</h2>
+
+<button id="darkModeBtn">🌙 Dark Mode</button>
+
+<input type="text" id="taskInput" placeholder="Enter a task">
+
+<select id="category">
+<option value="Work">Work</option>
+<option value="Personal">Personal</option>
+<option value="Shopping">Shopping</option>
+<option value="Academics">Academics</option>
+</select>
+
+<select id="priority">
+<option value="Low">Low Priority</option>
+<option value="Medium">Medium Priority</option>
+<option value="High">High Priority</option>
+</select>
+
+<input type="date" id="dueDate">
+
+<button id="addTaskBtn" class="addTaskBtn">Add Task</button>
+
+<input type="text" id="searchInput" placeholder="Search tasks...">
+
+<div class="progress-container">
+<div id="progressBar"></div>
+</div>
+
+<p id="progressText">0 / 0 tasks completed</p>
+
+<ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
